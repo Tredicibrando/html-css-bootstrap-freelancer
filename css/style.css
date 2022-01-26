@@ -21,5 +21,21 @@ ul li{
 }
 
 .ms_header .row{
-    height: 75px;
+    min-height: 75px;
+}
+
+#jumbo{
+    min-height: 600px;
+    background-color: #1abc9c;
+}
+
+#portfolio .card{
+    min-height: 250px;
+    border-radius: 5px;
+    background-color: tomato;
+}
+
+#about{
+    min-height: 300px;
+    background-color: #1abc9c;
 }
