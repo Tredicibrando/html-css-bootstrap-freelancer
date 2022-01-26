@@ -11,25 +11,27 @@
 <body>
     <header class="ms_header">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-
-                <div class="col-auto">
-                    <ul>
-                        <li>
-                            <a href="#">Start Bootstrap</a>
-                        </li>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid ">
+                  <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">PORTFOLIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                      </li>
                     </ul>
+                  </div>
                 </div>
-
-                <div class="col-auto">
-                    <ul>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -37,9 +39,13 @@
 
         <section id="jumbo">
             <div class="container">
-                <div class="row">
+                <div class="row py-5">
                     <div class="col-12 text-center">
+                        <figure>
+                            <img src="img/avatar.svg" alt="">
+                        </figure>
                         <h2>Start Bootstrap</h2>
+                        
                     </div>
                 </div>
             </div>
@@ -51,6 +57,7 @@
                     <div class="col-12 text-center">
                         <h2>Portfolio</h2>
                         <!-- stelline -->
+
                     </div>
                 </div>
 
@@ -129,26 +136,80 @@
             </div>
         </section>
 
-        <div class="contact">
+        <section class="contact py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2>Contact</h2>
+                        <h2>Contact Me</h2>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-12">
-                        
+                        <form class="row g-3">
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress2" class="form-label">Email Address</label>
+                              <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                              </div>
+                              <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Message</label>
+                                <input type="text" class="form-control ms_height" id="inputAddress2" placeholder="">
+                              </div>
+                            <!-- button -->
+                            <div class="col-12">
+                              <button type="submit" class="btn 45 green">Send</button>
+                            </div>
+                          </form>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+
+        <section id="social" class="gy-5 ">
+            <div class="container-fluid">
+                <div class="row py-5">
+                    <div class="col-12 col-sm-4 col-lg-4 text-center">
+                        <h5>Location</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, tempore.</p>
+                    </div>
+    
+                    <div class="col-12 col-sm-4 col-lg-4 text-center">
+                        <h5>Location</h5>
+                        <ul>
+                            <li><a href="#"></a> facebook</li>
+                            <li><a href="#"></a> facebook</li>
+                            <li><a href="#"></a> facebook</li>
+                            <li><a href="#"></a> facebook</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-12 col-sm-4 col-lg-4 text-center">
+                        <h5>About Freelancer</h5>
+                        <p>Freelance is a free to use open source bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
-        
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p>Copyright</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
